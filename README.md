@@ -63,10 +63,10 @@ are the same value.
 **Example**  
 ```js
 var sameValueZero = require('same-value-zero-x');
-Object.is(0, 0); // true
-Object.is(-0, -0); // true
-Object.is(0, -0); // false
-Object.is(NaN, NaN); //true
-Object.is(Infinity, Infinity); // true
-Object.is(-Infinity, -Infinity); // true
+sameValueZero(0, 0); // true
+sameValueZero(-0, -0); // true
+sameValueZero(0, -0); // false
+sameValueZero(NaN, NaN); //true
+sameValueZero(Infinity, Infinity); // true
+sameValueZero(-Infinity, -Infinity); // true
 ```
