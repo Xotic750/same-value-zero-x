@@ -50,7 +50,7 @@
     "style": "jscs index.js",
     "eslint": "eslint *.js tests/spec/*.js",
     "docs": "jsdoc2md --name-format --example-lang js index.js > README.md",
-    "build": "browserify -p browserify-derequire -e index.js -o lib/same-value-zero-x.js -u 'crypto' -s returnExports",
+    "build": "browserify -p browserify-derequire -e index.js -o lib/same-value-zero-x.js -u 'crypto' -s sameValueZero",
     "build-uglify": "uglifyjs lib/same-value-zero-x.js -o lib/same-value-zero-x.min.js --compress --keep-fnames --mangle --beautify ascii_only=true,beautify=false --source-map lib/same-value-zero-x.map"
   }
 }
