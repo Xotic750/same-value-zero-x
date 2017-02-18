@@ -1,4 +1,5 @@
 <a name="module_same-value-zero-x"></a>
+
 ## same-value-zero-x
 <a href="https://travis-ci.org/Xotic750/same-value-zero-x"
 title="Travis status">
@@ -41,11 +42,12 @@ es5-shim.js to be able to work properly.
 `es6.shim.js` provides compatibility shims so that legacy JavaScript engines
 behave as closely as possible to ECMAScript 6 (Harmony).
 
-**Version**: 1.0.5  
+**Version**: 1.1.0  
 **Author:** Xotic750 <Xotic750@gmail.com>  
 **License**: [MIT](&lt;https://opensource.org/licenses/MIT&gt;)  
 **Copyright**: Xotic750  
 <a name="exp_module_same-value-zero-x--module.exports"></a>
+
 ### `module.exports(x, y)` ⇒ <code>boolean</code> ⏏
 This method determines whether two values are the same value.
 SameValueZero differs from SameValue (`Object.is`) only in its treatment

@@ -1,14 +1,18 @@
-/*jslint maxlen:80, es6:true, white:true */
+/* jslint maxlen:80, es6:true, white:true */
 
-/*jshint bitwise:true, camelcase:true, curly:true, eqeqeq:true, forin:true,
-  freeze:true, futurehostile:true, latedef:true, newcap:true, nocomma:true,
-  nonbsp:true, singleGroups:true, strict:true, undef:true, unused:true,
-  es3:true, esnext:true, plusplus:true, maxparams:1, maxdepth:2,
-  maxstatements:11, maxcomplexity:3 */
+/* jshint bitwise:true, camelcase:true, curly:true, eqeqeq:true, forin:true,
+   freeze:true, futurehostile:true, latedef:true, newcap:true, nocomma:true,
+   nonbsp:true, singleGroups:true, strict:true, undef:true, unused:true,
+   es3:true, esnext:true, plusplus:true, maxparams:1, maxdepth:2,
+   maxstatements:11, maxcomplexity:3 */
 
-/*global JSON:true, expect, module, require, describe, it, returnExports */
+/* eslint strict: 1, max-lines: 1, symbol-description: 1, max-nested-callbacks: 1,
+   max-statements: 1 */
 
-(function () {
+/* global JSON:true, expect, module, require, describe, it, returnExports */
+
+;(function () { // eslint-disable-line no-extra-semi
+
   'use strict';
 
   var sameValueZero;
@@ -28,28 +32,29 @@
   describe('sameValueZero', function () {
     it('Basic', function () {
       var coercibleObject = {
-        valueOf: function () {
-          return 3;
-        },
         toString: function () {
           return 42;
+        },
+        valueOf: function () {
+          return 3;
         }
       };
       var valueOfOnlyObject = {
-        valueOf: function () {
-          return 4;
-        },
         toString: function () {
           return {};
+        },
+        valueOf: function () {
+          return 4;
         }
       };
       var toStringOnlyObject = {
-        valueOf: function () {
-          return {};
-        },
         toString: function () {
           return 7;
+        },
+        valueOf: function () {
+          return {};
         }
+
       };
       var objects = [
         {},
@@ -63,8 +68,7 @@
       expect(sameValueZero(NaN, NaN)).toBe(true, 'NaN is SameValueZero as NaN');
       expect(sameValueZero(0, -0)).toBe(true, '+0 is SameValueZero as -0');
       objects.concat(primitives).forEach(function (val) {
-        expect(sameValueZero(val, val))
-          .toBe(val === val, '"' + val + '" is SameValueZero to itself');
+        expect(sameValueZero(val, val)).toBe(val === val, '"' + val + '" is SameValueZero to itself');
       });
     });
   });
