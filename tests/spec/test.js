@@ -1,11 +1,3 @@
-/* jslint maxlen:80, es6:true, white:true */
-
-/* jshint bitwise:true, camelcase:true, curly:true, eqeqeq:true, forin:true,
-   freeze:true, futurehostile:true, latedef:true, newcap:true, nocomma:true,
-   nonbsp:true, singleGroups:true, strict:true, undef:true, unused:true,
-   es3:true, esnext:true, plusplus:true, maxparams:1, maxdepth:2,
-   maxstatements:11, maxcomplexity:3 */
-
 /* eslint strict: 1, max-lines: 1, symbol-description: 1, max-nested-callbacks: 1,
    max-statements: 1 */
 
