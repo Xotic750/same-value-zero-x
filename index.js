@@ -41,6 +41,8 @@
 
   'use strict';
 
+  var is = require('object-is');
+
   /**
    * This method determines whether two values are the same value.
    * SameValueZero differs from SameValue (`Object.is`) only in its treatment
@@ -60,6 +62,6 @@
    * sameValueZero(-Infinity, -Infinity); // true
    */
   module.exports = function sameValueZero(x, y) {
-    return x === y || Object.is(x, y);
+    return x === y || is(x, y);
   };
 }());

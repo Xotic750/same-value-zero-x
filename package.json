@@ -27,7 +27,9 @@
   "bugs": {
     "url": "https://github.com/Xotic750/same-value-zero-x/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "object-is": "^1.0.1"
+  },
   "devDependencies": {
     "@ljharb/eslint-config": "^11.0.0",
     "browserify": "^14.1.0",
