@@ -24,7 +24,7 @@
 ES6-compliant shim for SameValueZero.
 
 **See**: [7.2.10 SameValueZero(x, y)](http://www.ecma-international.org/ecma-262/6.0/#sec-samevaluezero)  
-**Version**: 1.3.0  
+**Version**: 1.3.1  
 **Author**: Xotic750 <Xotic750@gmail.com>  
 **License**: [MIT](&lt;https://opensource.org/licenses/MIT&gt;)  
 **Copyright**: Xotic750  

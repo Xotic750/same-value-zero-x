@@ -1,7 +1,7 @@
 /**
  * @file ES6-compliant shim for SameValueZero.
  * @see {@link http://www.ecma-international.org/ecma-262/6.0/#sec-samevaluezero|7.2.10 SameValueZero(x, y)}
- * @version 1.3.0
+ * @version 1.3.1
  * @author Xotic750 <Xotic750@gmail.com>
  * @copyright  Xotic750
  * @license {@link <https://opensource.org/licenses/MIT> MIT}
@@ -10,7 +10,7 @@
 
 'use strict';
 
-var is = require('object-is');
+var sameValue = require('same-value-x');
 
 /**
  * This method determines whether two values are the same value.
@@ -31,5 +31,5 @@ var is = require('object-is');
  * sameValueZero(-Infinity, -Infinity); // true
  */
 module.exports = function sameValueZero(x, y) {
-  return x === y || is(x, y);
+  return x === y || sameValue(x, y);
 };
