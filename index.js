@@ -1,7 +1,7 @@
 /**
  * @file ES6-compliant shim for SameValueZero.
  * @see {@link http://www.ecma-international.org/ecma-262/6.0/#sec-samevaluezero|7.2.10 SameValueZero(x, y)}
- * @version 1.3.1
+ * @version 1.3.2
  * @author Xotic750 <Xotic750@gmail.com>
  * @copyright  Xotic750
  * @license {@link <https://opensource.org/licenses/MIT> MIT}
@@ -25,7 +25,7 @@ var sameValue = require('same-value-x');
  * var sameValueZero = require('same-value-zero-x');
  * sameValueZero(0, 0); // true
  * sameValueZero(-0, -0); // true
- * sameValueZero(0, -0); // false
+ * sameValueZero(0, -0); // true
  * sameValueZero(NaN, NaN); //true
  * sameValueZero(Infinity, Infinity); // true
  * sameValueZero(-Infinity, -Infinity); // true
