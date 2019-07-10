@@ -117,7 +117,7 @@ module.exports = function generateConfig(env) {
      * @type {Array.<string>}
      * @see {@link https://webpack.js.org/concepts/entry-points/}
      */
-    entry: PACKAGE.main,
+    entry: PACKAGE.module,
 
     mode: NODE_ENV === PRODUCTION ? PRODUCTION : DEVELOPMENT,
 
