@@ -21,36 +21,37 @@
 <a name="module_same-value-zero-x"></a>
 
 ## same-value-zero-x
+
 ES6-compliant shim for SameValueZero.
 
-**See**: [7.2.10 SameValueZero(x, y)](http://www.ecma-international.org/ecma-262/6.0/#sec-samevaluezero)  
-**Version**: 1.3.2  
-**Author**: Xotic750 <Xotic750@gmail.com>  
-**License**: [MIT](&lt;https://opensource.org/licenses/MIT&gt;)  
-**Copyright**: Xotic750  
+**See**: [7.2.10 SameValueZero(x, y)](http://www.ecma-international.org/ecma-262/6.0/#sec-samevaluezero)
+
 <a name="exp_module_same-value-zero-x--module.exports"></a>
 
 ### `module.exports(x, y)` ⇒ <code>boolean</code> ⏏
+
 This method determines whether two values are the same value.
 SameValueZero differs from SameValue (`Object.is`) only in its treatment
 of +0 and -0.
 
 **Kind**: Exported function  
 **Returns**: <code>boolean</code> - A Boolean indicating whether or not the two arguments
-are the same value.  
+are the same value.
 
-| Param | Type | Description |
-| --- | --- | --- |
-| x | <code>\*</code> | The first value to compare. |
-| y | <code>\*</code> | The second value to compare. |
+| Param | Type            | Description                  |
+| ----- | --------------- | ---------------------------- |
+| x     | <code>\*</code> | The first value to compare.  |
+| y     | <code>\*</code> | The second value to compare. |
 
-**Example**  
+**Example**
+
 ```js
-var sameValueZero = require('same-value-zero-x');
-sameValueZero(0, 0); // true
-sameValueZero(-0, -0); // true
-sameValueZero(0, -0); // true
-sameValueZero(NaN, NaN); //true
-sameValueZero(Infinity, Infinity); // true
-sameValueZero(-Infinity, -Infinity); // true
+import sameValueZero from 'same-value-zero-x';
+
+console.log(sameValueZero(0, 0)); // true
+console.log(sameValueZero(-0, -0)); // true
+console.log(sameValueZero(0, -0)); // true
+console.log(sameValueZero(NaN, NaN)); //true
+console.log(sameValueZero(Infinity, Infinity)); // true
+console.log(sameValueZero(-Infinity, -Infinity)); // true
 ```
