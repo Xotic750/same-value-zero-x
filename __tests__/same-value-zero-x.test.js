@@ -2,7 +2,7 @@ import sameValueZero from 'src/same-value-zero-x';
 
 describe('sameValueZero', function() {
   it('basic', function() {
-    expect.assertions(10);
+    expect.assertions(17);
     const coercibleObject = {
       toString() {
         return 42;

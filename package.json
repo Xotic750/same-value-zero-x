@@ -21,7 +21,7 @@
   ],
   "browser": "dist/same-value-zero-x.min.js",
   "module": "src/same-value-zero-x.js",
-  "main": "src/same-value-zero-x.js",
+  "main": "dist/same-value-zero-x.js",
   "scripts": {
     "build:base": "webpack --bail --progress --profile --colors",
     "build": "cross-env NODE_ENV=production npm run build:base --",
