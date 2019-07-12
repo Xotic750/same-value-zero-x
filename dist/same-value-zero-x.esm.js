@@ -1,5 +1,4 @@
 import sameValue from 'same-value-x';
-
 /**
  * This method determines whether two values are the same value.
  * SameValueZero differs from SameValue (`Object.is`) only in its treatment
@@ -10,6 +9,9 @@ import sameValue from 'same-value-x';
  * @returns {boolean} A Boolean indicating whether or not the two arguments
  * are the same value.
  */
+
 export default function sameValueZero(x, y) {
   return x === y || sameValue(x, y);
 }
+
+//# sourceMappingURL=same-value-zero-x.esm.js.map
