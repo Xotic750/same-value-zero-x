@@ -1,6 +1,6 @@
 {
   "name": "same-value-zero-x",
-  "version": "2.0.14",
+  "version": "2.0.15",
   "description": "ES6-compliant shim for SameValueZero.",
   "homepage": "https://github.com/Xotic750/same-value-zero-x",
   "author": {
@@ -48,23 +48,23 @@
     "url": "https://github.com/Xotic750/same-value-zero-x/issues"
   },
   "dependencies": {
-    "same-value-x": "^2.0.14"
+    "same-value-x": "^2.0.15"
   },
   "devDependencies": {
-    "@babel/cli": "^7.5.0",
-    "@babel/core": "^7.5.4",
-    "@babel/node": "^7.5.0",
-    "@babel/plugin-proposal-class-properties": "^7.5.0",
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/node": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
     "@babel/plugin-syntax-dynamic-import": "^7.2.0",
     "@babel/plugin-syntax-export-default-from": "^7.2.0",
     "@babel/plugin-syntax-export-namespace-from": "^7.2.0",
     "@babel/plugin-transform-property-mutators": "^7.2.0",
-    "@babel/plugin-transform-runtime": "^7.5.0",
-    "@babel/preset-env": "^7.5.4",
-    "@babel/runtime": "^7.5.4",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/runtime": "^7.5.5",
     "@prorenata/eslint-config-vue": "^1.13.7",
     "@types/jest": "^24.0.15",
-    "@types/node": "^12.6.6",
+    "@types/node": "^12.6.8",
     "babel-core": "^7.0.0-0",
     "babel-eslint": "^10.0.2",
     "babel-loader": "^8.0.6",
