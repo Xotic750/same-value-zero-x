@@ -10,8 +10,10 @@ import sameValue from 'same-value-x';
  * are the same value.
  */
 
-export default function sameValueZero(x, y) {
+var sameValueZero = function sameValueZero(x, y) {
   return x === y || sameValue(x, y);
-}
+};
+
+export default sameValueZero;
 
 //# sourceMappingURL=same-value-zero-x.esm.js.map

@@ -2,11 +2,11 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2015-present",
-  "date": "2019-07-16T20:59:22.380Z",
+  "date": "2019-07-17T13:01:10.302Z",
   "describe": "",
   "description": "ES6-compliant shim for SameValueZero.",
   "file": "same-value-zero-x.js",
-  "hash": "25046101e0f17bfe57db",
+  "hash": "9b014024021319a978d7",
   "license": "MIT",
   "version": "2.0.11"
 }
@@ -171,7 +171,6 @@ function sameValue(value1, value2) {
 
 
 // CONCATENATED MODULE: ./dist/same-value-zero-x.esm.js
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "default", function() { return sameValueZero; });
 
 /**
  * This method determines whether two values are the same value.
@@ -184,9 +183,11 @@ function sameValue(value1, value2) {
  * are the same value.
  */
 
-function sameValueZero(x, y) {
+var same_value_zero_x_esm_sameValueZero = function sameValueZero(x, y) {
   return x === y || sameValue(x, y);
-}
+};
+
+/* harmony default export */ var same_value_zero_x_esm = __webpack_exports__["default"] = (same_value_zero_x_esm_sameValueZero);
 
 
 

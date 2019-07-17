@@ -10,6 +10,8 @@ import sameValue from 'same-value-x';
  * @returns {boolean} A Boolean indicating whether or not the two arguments
  * are the same value.
  */
-export default function sameValueZero(x, y) {
+const sameValueZero = function sameValueZero(x, y) {
   return x === y || sameValue(x, y);
-}
+};
+
+export default sameValueZero;
