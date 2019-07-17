@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2015-present",
-  "date": "2019-07-17T13:29:55.006Z",
+  "date": "2019-07-17T17:16:06.390Z",
   "describe": "",
   "description": "ES6-compliant shim for SameValueZero.",
   "file": "same-value-zero-x.js",
-  "hash": "9b014024021319a978d7",
+  "hash": "8b515394f18241f8bca0",
   "license": "MIT",
-  "version": "2.0.12"
+  "version": "2.0.13"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
@@ -139,10 +139,12 @@ __webpack_require__.r(__webpack_exports__);
  * @returns {boolean} `true` if the given value is NaN and its type is Number;
  *  otherwise, `false`.
  */
-function is_nan_x_esm_isNaN(value) {
+var is_nan_x_esm_isNaN = function isNaN(value) {
   /* eslint-disable-next-line no-self-compare */
   return value !== value;
-}
+};
+
+/* harmony default export */ var is_nan_x_esm = (is_nan_x_esm_isNaN);
 
 
 // CONCATENATED MODULE: ./node_modules/same-value-x/dist/same-value-x.esm.js
@@ -157,7 +159,7 @@ function is_nan_x_esm_isNaN(value) {
  *  the same value.
  */
 
-function sameValue(value1, value2) {
+var same_value_x_esm_sameValue = function sameValue(value1, value2) {
   if (value1 === 0 && value2 === 0) {
     return 1 / value1 === 1 / value2;
   }
@@ -166,8 +168,10 @@ function sameValue(value1, value2) {
     return true;
   }
 
-  return is_nan_x_esm_isNaN(value1) && is_nan_x_esm_isNaN(value2);
-}
+  return is_nan_x_esm(value1) && is_nan_x_esm(value2);
+};
+
+/* harmony default export */ var same_value_x_esm = (same_value_x_esm_sameValue);
 
 
 // CONCATENATED MODULE: ./dist/same-value-zero-x.esm.js
@@ -184,7 +188,7 @@ function sameValue(value1, value2) {
  */
 
 var same_value_zero_x_esm_sameValueZero = function sameValueZero(x, y) {
-  return x === y || sameValue(x, y);
+  return x === y || same_value_x_esm(x, y);
 };
 
 /* harmony default export */ var same_value_zero_x_esm = __webpack_exports__["default"] = (same_value_zero_x_esm_sameValueZero);
