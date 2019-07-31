@@ -2,13 +2,13 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2015-present",
-  "date": "2019-07-31T19:18:58.851Z",
+  "date": "2019-07-31T21:48:01.744Z",
   "describe": "",
   "description": "ES6-compliant shim for SameValueZero.",
   "file": "same-value-zero-x.js",
   "hash": "8b515394f18241f8bca0",
   "license": "MIT",
-  "version": "2.0.28"
+  "version": "2.0.29"
 }
 */
 (function webpackUniversalModuleDefinition(root, factory) {
