@@ -2,7 +2,7 @@
 {
   "author": "Graham Fairweather",
   "copywrite": "Copyright (c) 2015-present",
-  "date": "2019-07-31T15:33:15.023Z",
+  "date": "2019-07-31T17:03:17.749Z",
   "describe": "",
   "description": "ES6-compliant shim for SameValueZero.",
   "file": "same-value-zero-x.js",
